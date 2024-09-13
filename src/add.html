@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<nav class="bg-white shadow-sm py-4">
+    <div class="container mx-auto flex justify-end">
+        <ul class="flex space-x-6 text-gray-600 hover:text-gray-900">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mx-auto mt-10">
+    <div class="text-3xl font-semibold mb-8">Create Recipe</div>
+    <div class="grid grid-cols-2 gap-8">
+
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Recipe General Info</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <div class="w-full h-40 bg-gray-100 flex items-center justify-center border border-dashed border-gray-300 rounded-md">
+                        <span class="text-gray-400">Image</span>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Recipe name</label>
+                    <input type="text" placeholder="Name" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Category</label>
+                    <input type="text" placeholder="Category" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+                </div>
+                <div class="mb-4 grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-700">Number of serving</label>
+                        <input type="text" placeholder="Ex: 2-3 person" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700">Cook duration</label>
+                        <input type="text" placeholder="Ex: 30 minutes" class="w-full mt-1 p-2 border border-gray-300 rounded-md">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Description</label>
+                    <textarea placeholder="Desc" class="w-full mt-1 p-2 border border-gray-300 rounded-md"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Recipe Detail</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-8">
+                    <label class="block text-gray-700">Ingredients</label>
+                    <textarea placeholder="Ex: 1 egg, 4 tomatoes" class="w-full h-52 mt-1 p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-700">Directions</label>
+                    <textarea placeholder="Ex: Mixing the egg with tomatoes" class="w-full h-52 mt-1 p-2 border border-gray-300 rounded"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
