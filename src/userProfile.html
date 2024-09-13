@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav
+        class="bg-slate-200 p-4 flex gap-3 justify-end text-slate-500 font-normal"
+      >
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Profile</a>
+      </nav>
+    </div>
+    <div
+      class="hero-profile border border-slate-400 mt-10 p-6 mx-auto w-3/4 rounded flex items-center justify-between"
+    >
+      <div class="user-left flex items-center justify-start">
+        <img
+          src="https://picsum.photos/150/150"
+          alt=""
+          class="rounded-full w-24 h-24"
+        />
+        <ul class="p-2 ml-2">
+          <li class="text-md mb-2 text-slate-500">User Name</li>
+          <li class="text-sm mb-2 text-slate-500">@username</li>
+          <li class="text-sm mb-2 text-slate-400">Bio</li>
+        </ul>
+      </div>
+      <div class="user-right hidden md:block">
+        <button class="bg-slate-500 text-white font-medium px-4 py-2 rounded">
+          Edit Profile
+        </button>
+      </div>
+    </div>
+
+    <!-- Recipes Collection -->
+    <div class="hero-profile mt-10 px-1 py-6 mx-auto w-3/4 rounded">
+      <h1 class="text-slate-500 font-semibold">Recipes Collection</h1>
+      <div class="grid md:grid-cols-3 gap-4 mt-5">
+        <!-- Item 1 -->
+        <figure
+          class="border border-slate-400 rounded overflow-hidden shadow-lg"
+        >
+          <img src="https://picsum.photos/300" class="rounded-t-lg w-full" />
+          <article class="px-6 py-3 text=pretty">
+            <h1 class="text-slate-500 font-bold mt-5">Udang Bakar</h1>
+            <p class="text-slate-600 font-normal mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+            </p>
+          </article>
+          <hr class="w-3/4 mx-auto" />
+          <figcaption class="flex justify-between px-4 py-4 items-center">
+            <button
+              class="bg-slate-200 px-4 py-2 rounded font-semibold text-slate-600"
+            >
+              Category
+            </button>
+            <p class="text-slate-400">Jan 24, 2024</p>
+          </figcaption>
+        </figure>
+
+        <!-- End Item 1 -->
+        <!-- Item 2 -->
+
+        <figure
+          class="border border-slate-400 rounded overflow-hidden shadow-lg"
+        >
+          <img src="https://picsum.photos/301" class="rounded-t-lg w-full" />
+          <article class="px-6 py-3 text=pretty">
+            <h1 class="text-slate-500 font-bold mt-5">Sate Ayam</h1>
+            <p class="text-slate-600 font-normal mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+            </p>
+          </article>
+          <hr class="w-3/4 mx-auto" />
+          <figcaption class="flex justify-between px-4 py-4 items-center">
+            <button
+              class="bg-slate-200 px-4 py-2 rounded font-semibold text-slate-600"
+            >
+              Category
+            </button>
+            <p class="text-slate-400">Feb 14, 2024</p>
+          </figcaption>
+        </figure>
+
+        <!-- End Item 2 -->
+        <!-- Item 3 -->
+
+        <figure
+          class="border border-slate-400 rounded overflow-hidden shadow-lg"
+        >
+          <img src="https://picsum.photos/302" class="rounded-t-lg w-full" />
+          <article class="px-6 py-3 text=pretty">
+            <h1 class="text-slate-500 font-bold mt-5">Es Teh Manis</h1>
+            <p class="text-slate-600 font-normal mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+            </p>
+          </article>
+          <hr class="w-3/4 mx-auto" />
+          <figcaption class="flex justify-between px-4 py-4 items-center">
+            <button
+              class="bg-slate-200 px-4 py-2 rounded font-semibold text-slate-600"
+            >
+              Category
+            </button>
+            <p class="text-slate-400">Jul 30, 2024</p>
+          </figcaption>
+        </figure>
+        <!-- End Item 3 -->
+      </div>
+    </div>
+  </body>
+</html>
+\
